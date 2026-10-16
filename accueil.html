@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOLDEN GAMER X - GAME STORE</title>
+    <meta name="description" content="Parcourez le catalogue GOLDEN GAMER X : action, aventure, RPG, FPS, horreur, course, sport, combat et stratégie.">
+    <meta name="google-adsense-account" content="ca-pub-XXXXXXXXXXXXXXXX">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="accueil.html" class="logo-retour">
+            <h1>GOLDEN GAMER X <span>GAME STORE</span></h1>
+        </a>
+    </header>
+
+    <!-- Les boutons de catégories sont créés par app.js à partir de data/meta.js -->
+    <nav class="categories" aria-label="Catégories de jeux">
+        <a href="accueil.html" data-cat="tous" class="active" aria-current="page">Tous</a>
+    </nav>
+
+    <div class="search-container" role="search">
+        <div class="search-bar">
+            <span class="search-icon" aria-hidden="true">🔍</span>
+            <input type="search" id="search-input" placeholder="Rechercher un jeu..." autocomplete="off"
+                   aria-label="Rechercher un jeu" maxlength="100">
+            <button type="button" id="search-clear" class="search-clear" aria-label="Effacer la recherche" style="display:none;">✕</button>
+        </div>
+        <div id="search-results-count" class="search-results-count" aria-live="polite"></div>
+    </div>
+
+    <!-- Bandeau : les images sont dupliquées automatiquement par app.js -->
+    <div class="marquee-container" data-sans-repli aria-hidden="true">
+        <div class="marquee-content">
+            <img src="Image/Final_Fantasy_VII_Revelation_logo.jpeg" data-alt="Image/Final_Fantasy_VII_Revelation_logo.png" alt="Final Fantasy VII">
+            <img src="Image/clair-obscur-expedition-33-cover-375x500.png" alt="Clair Obscur : Expedition 33">
+            <img src="Image/Control.jpg" alt="Control">
+            <img src="Image/darksoul.jpg" alt="Dark Souls">
+            <img src="Image/Death Stranding.jpg" alt="Death Stranding">
+            <img src="Image/DEVIL MAY CRY V.jpg" alt="Devil May Cry 5">
+            <img src="Image/elden-ring.jpeg" alt="Elden Ring">
+            <img src="Image/ellie-the-last-of-us-2-playstation-4-the-last-of-us-part-ii-2048x2048-2966.png" alt="The Last of Us Part II">
+            <img src="Image/FC 26 cover.jpg" alt="EA Sports FC 26">
+            <img src="Image/god-of-war-ragnarock.jpeg" alt="God of War Ragnarök">
+        </div>
+    </div>
+
+    <!-- Nouvelles sorties : rempli par app.js depuis data/nouveautes.js (masqué s'il n'existe pas) -->
+    <section class="nouveautes-carousel-section" id="nouveautes" aria-labelledby="titre-nouveautes" hidden>
+        <div class="nouveautes-entete">
+            <h2 id="titre-nouveautes">🔥 Nouvelles sorties</h2>
+            <a href="nouveautes.html" class="lien-voir-tout">Tout voir →</a>
+        </div>
+        <div class="carousel-wrap">
+            <button type="button" class="carousel-fleche carousel-prec" data-sens="-1" aria-label="Voir les jeux précédents">‹</button>
+            <div class="carousel-track" id="carousel-track" role="list" tabindex="0" aria-label="Nouvelles sorties"></div>
+            <button type="button" class="carousel-fleche carousel-suiv" data-sens="1" aria-label="Voir les jeux suivants">›</button>
+        </div>
+    </section>
+
+    <main id="liste-jeux" class="games-list" aria-live="polite">
+        <p class="chargement">Chargement des jeux…</p>
+        <noscript><p class="chargement">JavaScript est nécessaire pour afficher le catalogue.</p></noscript>
+    </main>
+
+    <nav id="pagination" class="pagination" aria-label="Pagination des jeux"></nav>
+
+    <footer>
+        <p>© 2026 Golden Gamer X. Tous droits réservés.</p>
+        <p class="credit-donnees">Données de jeux fournies par <a href="https://rawg.io" target="_blank" rel="noopener noreferrer">RAWG</a>.</p>
+        <p class="liens-legaux">
+            <a href="mentions-legales.html">Mentions légales</a> ·
+            <a href="confidentialite.html">Politique de confidentialité</a> ·
+            <a href="#" data-gerer-cookies>Gérer mes cookies</a>
+        </p>
+    </footer>
+
+    <script src="gg.js"></script>
+    <script src="pub.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

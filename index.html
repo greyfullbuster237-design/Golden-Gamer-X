@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOLDEN GAMER X - Bienvenue</title>
+    <meta name="description" content="GOLDEN GAMER X : le catalogue de jeux vidéo pour rejoindre le monde incroyable du gaming.">
+    <meta name="google-adsense-account" content="ca-pub-XXXXXXXXXXXXXXXX">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            min-height: 100vh;
+            background: #0f0f1a url(Image/cyberFuture.jpg) center / cover no-repeat fixed;
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 2rem;
+            padding: 2rem 1rem 4rem;
+        }
+
+        h1 {
+            font-size: clamp(2.2rem, 8vw, 5rem);
+            color: gold;
+            text-shadow: 0 0 10px gold, 0 0 20px gold, 0 0 40px gold;
+        }
+
+        p {
+            font-size: clamp(1.1rem, 3.5vw, 2.5rem);
+            color: #0099ff;
+            text-shadow: 0 2px 2px #fff;
+        }
+
+        .btn-play {
+            display: inline-block;
+            padding: 15px 40px;
+            font-family: 'Rajdhani', 'Segoe UI', Arial, sans-serif;
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-decoration: none;
+            color: #fff;
+            border: 3px solid rgb(56, 26, 230);
+            border-radius: 10px;
+            background: linear-gradient(-60deg, #ff00ff, #00ffff, #ff0066, #0066ff);
+            background-size: 400% 400%;
+            animation: rainbow 10s ease infinite;
+            box-shadow: 0 0 15px blueviolet, 0 0 15px blueviolet, 0 0 15px blueviolet;
+            transition: transform 0.3s, box-shadow 0.3s, color 0.3s;
+        }
+
+        .btn-play:hover,
+        .btn-play:focus-visible {
+            color: rgb(81, 85, 83);
+            background: rgb(229, 229, 230);
+            box-shadow: 0 0 10px pink, 0 0 20px pink, 0 0 40px pink;
+            transform: scale(1.1);
+            outline: none;
+        }
+
+        footer {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 12px;
+            font-size: 0.9rem;
+            color: #e7d8d8;
+        }
+
+        @keyframes rainbow {
+            0%   { background-position: 0% 50%; }
+            50%  { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        footer a { color: #00ffff; margin: 0 6px; }
+
+        @media (prefers-reduced-motion: reduce) {
+            .btn-play { animation: none; transition: none; }
+        }
+    </style>
+</head>
+<body>
+    <h1>GOLDEN GAMER X</h1>
+    <p>Prêt à rejoindre le monde incroyable du gaming</p>
+    <a href="accueil.html" class="btn-play">LET'S PLAY</a>
+    <footer>© 2026 Golden Gamer X<br>
+        <a href="mentions-legales.html">Mentions légales</a> ·
+        <a href="confidentialite.html">Politique de confidentialité</a>
+    </footer>
+</body>
+</html>
