@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Golden Gamer X">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#17172b"/>
+      <stop offset="1" stop-color="#080a13"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff2a3"/>
+      <stop offset="0.5" stop-color="#ffd700"/>
+      <stop offset="1" stop-color="#ff9f1c"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#bg)" stroke="#00ffff" stroke-width="2"/>
+  <path d="M18 20h15v6H24v12h9v-4h-5v-5h12v15H18z" fill="url(#gold)"/>
+  <path d="M42 19h7l-5 13 5 13h-7l-5-13z" fill="#00ffff"/>
+  <path d="M14 49h36" stroke="#ff006e" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
